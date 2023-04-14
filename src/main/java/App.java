@@ -8,7 +8,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * JavaFX App
+ * JavaFX FXML Application Loader
+ * 
+ * Loads an FXML based JavaFX ui and displays it.
  */
 public class App extends Application {
 
@@ -16,7 +18,8 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        //Change primary to whatever FXML file you wish to load
+        scene = new Scene(loadFXML("primary"), 640, 480); 
         stage.setScene(scene);
         stage.show();
     }
